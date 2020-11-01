@@ -242,6 +242,14 @@ nav a:hover {
   background-attachment: fixed;
 }
 
+.popis_fotky {
+  background-color: #333;
+}
+
+.popis {
+  text-align: center;
+}
+
 .contacts {
   margin-bottom: 4rem;
 
