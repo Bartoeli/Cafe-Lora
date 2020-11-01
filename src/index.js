@@ -68,6 +68,16 @@ const drinks = [
 ];
 
 const drinkList = document.querySelector('.drinks-list');
-drinks.forEach((drink) => {
-  drinkList.appendChild(Drink(drink));
-});
+// drinks.forEach((drink) => {
+//   drinkList.appendChild(Drink(drink));
+// });
+
+fetch('http://cafelora.kodim.cz/api/drinks')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    data.forEach((drink) => {
+      drinkList.appendChild(Drink(drink));
+    });
+  });
