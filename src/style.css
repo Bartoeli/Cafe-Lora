@@ -148,37 +148,6 @@ nav a:hover {
   margin-bottom: 4rem;
 }
 
-.drink__cup img {
-  width: 9rem;
-  height: 9rem;
-}
-
-.drink__cup--selected {
-  background-image: url('./img/cup-selected.png');
-  background-size: contain;
-}
-
-.drink__cup--selected img {
-  display: none;
-}
-
-.order-btn:hover {
-  transform: scale(1.1);
-}
-
-.order-btn:focus {
-  outline: none;
-}
-
-.order-btn:active {
-  background-color: #e67e51;
-}
-
-.layer {
-  display: flex;
-  padding: 0.25rem;
-}
-
 .gallery {
   padding-top: 0;
   height: 100vh;

@@ -30,9 +30,27 @@ const drinkData = [
   { color: '#613916', label: 'espresso' },
 ];
 
-const drinkList = document.querySelector('.drinks-list');
-drinkList.appendChild(
-  Drink({
+const drinks = [
+  {
+    id: 'cappuccino',
+    name: 'Cappuccino',
+    ordered: false,
+    layers: [
+      {
+        color: '#feeeca',
+        label: 'mléčná pěna',
+      },
+      {
+        color: '#fed7b0',
+        label: 'teplé mléko',
+      },
+      {
+        color: '#613916',
+        label: 'espresso',
+      },
+    ],
+  },
+  {
     id: 'romano',
     name: 'Romano',
     ordered: false,
@@ -46,5 +64,10 @@ drinkList.appendChild(
         label: 'espresso',
       },
     ],
-  }),
-);
+  },
+];
+
+const drinkList = document.querySelector('.drinks-list');
+drinks.forEach((drink) => {
+  drinkList.appendChild(Drink(drink));
+});

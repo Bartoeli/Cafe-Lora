@@ -11,6 +11,20 @@
   height: 9rem;
 }
 
+.drink__cup img {
+  width: 9rem;
+  height: 9rem;
+}
+
+.drink__cup--selected {
+  background-image: url('../img/cup-selected.png');
+  background-size: contain;
+}
+
+.drink__cup--selected img {
+  display: none;
+}
+
 .drink__info {
   margin-left: 1rem;
 }
@@ -32,4 +46,16 @@
 
   transition: 300ms;
   cursor: pointer;
+}
+
+.order-btn:hover {
+  transform: scale(1.1);
+}
+
+.order-btn:focus {
+  outline: none;
+}
+
+.order-btn:active {
+  background-color: #e67e51;
 }
